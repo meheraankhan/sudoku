@@ -1,0 +1,262 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+hr {
+    width: 500px;
+}
+
+/* #difficulty {
+    margin-top: auto;
+}
+
+#difficulty-options {
+    display: flex;
+    justify-content: center;
+}
+
+#difficulty-options > div {
+    margin: 10 60px;
+    cursor: pointer;
+    transition: font-size 0.2s, font-weight 0.2s;
+}
+
+#difficulty-options > div:hover {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#easy {
+    color: lightgreen;
+}
+
+#medium {
+    color: yellow;
+}
+
+#hard {
+    color: red
+}
+
+#easy.selected, #medium.selected, #hard.selected {
+    font-family: 26px;
+    font-weight: bold;
+    background-color: black;
+} */
+
+
+#difficulty {
+    margin-top: auto;
+    font-size: 24px;
+    background-color: #424993;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius: 10px;
+}
+
+#difficulty-options {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#difficulty-options > div {
+    margin: 0 10px; 
+    cursor: pointer;
+    transition: font-size 0.2s, font-weight 0.2s;
+    padding: 10px 20px; 
+    border-radius: 10px; 
+}
+
+#difficulty-options > div:hover {
+    font-size: 26px; 
+    font-weight: bold;
+}
+
+#easy {
+    color: lightgreen;
+}
+
+#medium {
+    color: yellow;
+}
+
+#hard {
+    color: red;
+}
+
+/* Style for the selected difficulty */
+#easy.selected, #medium.selected, #hard.selected {
+    font-weight: bold;
+    background-color: #333; 
+    color: white; 
+}
+
+/* #reset {
+    margin-top: auto;
+    font-size: 20px;
+}
+
+#buttons > button {
+    margin: 10px 60px;
+    cursor: pointer;
+    transition: font-size 0.2s, font-weight 0.2s;
+}
+
+#buttons > button:hover{
+    font-size: 22px;
+    font-weight: bold;
+} */
+
+#reset {
+    margin-top: auto;
+    font-size: 20px;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius: 10px;
+}
+
+#buttons > button {
+    margin: 10px 60px;
+    cursor: pointer;
+    transition: font-size 0.2s, font-weight 0.2s;
+    background-color: #008CBA; /* Blue */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#buttons > button:hover {
+    font-size: 22px;
+    font-weight: bold;
+    background-color: #005F6B; /* Darker Blue */
+}
+
+#errors {
+    color: coral;
+    display: inline-block;
+    padding: 0.2em 0.5em;
+    border-radius: 5px;
+    background-color: rgb(230, 230, 156);
+}
+
+#board {
+    width: 450px;
+    height: 450px;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tile {
+    width: 48px;
+    height: 48px;
+    border: 1px solid lightgray;
+
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#digits {
+    width: 450px;
+    height: 50px;
+
+    margin: 0 auto;
+    display: flex;
+    flex: wrap;
+}
+
+.number{
+    width: 44px;
+    height: 44px;
+    border: 1px solid black;
+    margin-right: 6px;
+
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.erase {
+    width: 44px;
+    height: 44px;
+    border: 1px solid black;
+    margin-right: 6px;
+
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number-selected {
+    background-color: gray;
+}
+
+.erase-selected {
+    background-color: gray;
+}
+
+.given-tile {
+    background-color: whitesmoke;
+}
+
+.horizontal-line {
+    border-bottom: 1px solid black;
+}
+
+.vertical-line {
+    border-right: 1px solid black;
+}
+
+.popup {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    z-index: 9999;
+}
+
+.overlay {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 9998;
+}

@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width initial-scale-1.0 user-scalable-no">
+        <title>Sudoku</title>
+
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <h1>Sudoku</h1>
+        <hr>
+        <h2 id="difficulty">Difficulty</h2>
+        <div id="difficulty-options">
+            <div id="easy" onclick="selectDifficulty('easy')">Easy</div>
+            <div id="medium" onclick="selectDifficulty('medium')">Medium</div>
+            <div id="hard" onclick="selectDifficulty('hard')">Hard</div>
+        </div>
+        <hr>
+        <h4 id="reset">Reset</h4>
+        <div id="buttons">
+            <button onclick="selectDifficulty('easy')">New Board</button>
+            <button onclick="resetBoard()">Reset Board</button>
+        </div>
+        <hr>
+        <h3 id="errors">0</h3>
+        
+        <div id="board"></div>
+        <br>
+        <div id="digits"></div>
+        <div id="popup" class="popup">
+            <h4>Congratulations!</h4>
+            <p>You won this round! Generate new board to play again.</p>
+            <button onclick="closePopup()">Close</button>
+        </div>
+        <div id="overlay" classs="overlay"></div>
+
+    </body>
+</html>
